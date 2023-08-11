@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    p{
+        color: green;
+    }
+    
+    /* een class begint altijd met een punt */
+    .bg-color {
+        background-color: cyan;
+    }
+/* een ID selector is altijd een # */
+    #menu{
+        font-size: 18px;
+        color: brown;
+    }
+
+</style>
+
+<script>
+    //javascript commentaar is dubbele //
+
+    let a = 6;
+    let b = 3;
+    let c = 0;
+    let getal1 = 0;
+    //object
+    let y = {running:true, Brand: 'Porche'}
+
+    let var1 = 'this is a string';
+    let var2 = 15;
+    let var3 = {powerded:true, brand:"Lenovo"}; // object heeft een {}
+    let var4 = [1,true,5,16,'this is an araray']; //array werkt met []
+    let var5 = false;
+
+    console.log(var1);
+    console.log(var2);
+    console.log(var3);
+    console.log(var4);
+    console.log(var5);
+
+
+   function tellen(){
+
+    //alert('lekker tellen hihi');
+    
+    c += a + b;
+    getal1 ++
+    console.log(getal1);
+
+    //console.log(c);
+
+   }
+
+   function delen(){
+    let getal2 = 50;
+    getal2 /=2;
+    console.log("50 gedeeld door 2 is " + getal2);
+   }
+
+   function keer(){
+    let waarde1 = 50;
+    let waarde2 = 2;
+
+    waarde1 *= waarde2;
+    console.log(waarde1 + "keer " + waarde2 + " is " + waarde1);
+   }
+   keer(); //werkt niet helemaal goed
+   delen(); 
+   tellen();
+
+    console.log('C = ' + c);
+    // ik kan ook een let naam in de console typen en op enter drukken om de waarde van die let weer te geven
+
+    function optellen(){
+        let getal3 = document.getElementById('invoer-getal1') ++;
+    }
+
+
+
+
+    function DoeDelen(){
+        let x = document.getElementById('invoer-getal1').value;
+        let y = document.getElementById('invoer-getal2').value;
+
+        x=parseInt(x);
+        y=parseInt(y);
+
+        let uitkomst= x/y;
+
+        alert(uitkomst);
+
+    }
+
+
+
+</script>
+</head>
+<body>
+<H1>Bonjour</H1>
+<!-- hallow -->
+
+<p>hoi</p> <p>tweede regel</p>
+
+<input type="number" id='invoer-getal1'>
+<input type="number" id='invoer-getal2'>
+<button type = button onclick="DoeDelen();"> Delen door</button>
+
+<button onclick="tellen();">
+
+    lekker tellen
+
+</button>
+
+<span> Dit is een span.</span> <Span>Dit is ook een span</Span>
+
+<ol class="bg-color">
+    <li> item 1</li> <li> item 2</li>
+</ol>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+</ul>
+
+<table id="menu">
+    <tr>Table row
+        <td> Rij 1 - Cell 1</td>
+        <td>Rij 1 - Cell 2</td>
+    </tr>
+    <tr>Table row 2
+        <td>Rij 2 - Cell 1</td>
+        <td>Rij 2 - Cell 2</td>
+    </tr>
+</table>
+</body>
+</html>
